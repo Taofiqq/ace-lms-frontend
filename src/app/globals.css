@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --vercel-bg: #fafafa;
+  --vercel-heading-strong: #171717;
+  --vercel-heading-light: #666666;
+  --vercel-button-bg: #171717;
+  --vercel-button-text: #ffffff;
+  --vercel-button-hover: #555555;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-vercel-bg: var(--vercel-bg);
+  --color-vercel-heading-strong: var(--vercel-heading-strong);
+  --color-vercel-heading-light: var(--vercel-heading-light);
+  --color-vercel-button-bg: var(--vercel-button-bg);
+  --color-vercel-button-text: var(--vercel-button-text);
+  --color-vercel-button-hover: var(--vercel-button-hover);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    --vercel-bg: #0a0a0a;
+    --vercel-heading-strong: #ffffff;
+    --vercel-heading-light: #999999;
+    --vercel-button-bg: #ffffff;
+    --vercel-button-text: #0a0a0a;
+    --vercel-button-hover: #cccccc;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
